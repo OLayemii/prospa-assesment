@@ -14,7 +14,7 @@ const About = lazy(() => import('../pages/about/About'));
 
 const Routes = () => (
   // eslint-disable-next-line no-undef
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <Suspense fallback={<PageLoader />}>
       <AlertWrapper ref={alertRef => (window.alertRef = alertRef)} />
       <Switch>
